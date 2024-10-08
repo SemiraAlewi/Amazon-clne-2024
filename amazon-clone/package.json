@@ -1,5 +1,6 @@
+
 {
-  "homepage":"https://SemiraAlewi.github.io/Amazon-clne-2024",
+  "homepage": "https://SemiraAlewi.github.io/Amazon-clone-2024",
   "name": "amazon-clone",
   "version": "0.1.0",
   "private": true,
@@ -15,8 +16,8 @@
     "axios": "^1.7.7",
     "firebase": "^10.14.0",
     "numeral": "^2.0.6",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-icons": "^5.3.0",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.26.2",
@@ -26,8 +27,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -52,5 +53,13 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SemiraAlewi/Amazon-clone-2024.git"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
   }
 }
