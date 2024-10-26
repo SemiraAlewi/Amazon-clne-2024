@@ -1,21 +1,21 @@
 import firebase from "firebase/compat/app";
-// auth
-import { getAuth } from "firebase/auth";
+import {getAuth} from "firebase/auth";
 import "firebase/compat/firestore";
 import "firebase/compat/auth";
-// import { getAnalytics } from "firebase/analytics";
 
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDd-oFl5joN7VQy0hHisnal_MsCkJpJnuw",
-  authDomain: "clone-1d334.firebaseapp.com",
-  projectId: "clone-1d334",
-  storageBucket: "clone-1d334.appspot.com",
-  messagingSenderId: "49279087897",
-  appId: "1:49279087897:web:85b4f59a6e884226594188"
+  apiKey: "AIzaSyAYN55Qpf_o5xY9dDhniryQziz08d0tEDY",
+  authDomain: "clone-2024-d9b68.firebaseapp.com",
+  projectId: "clone-2024-d9b68",
+  storageBucket: "clone-2024-d9b68.appspot.com",
+  messagingSenderId: "61998021842",
+  appId: "1:61998021842:web:9482c15e654a28a746410b",
+  measurementId: "G-6JCTZCN54D"
 };
 
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
-// const analytics = getAnalytics(app);
-export const auth = getAuth(app);
+export const auth =getAuth(app);
 export const db = app.firestore();

@@ -1,0 +1,84 @@
+[debug] [2024-10-23T14:59:51.971Z] ----------------------------------------------------------------------
+[debug] [2024-10-23T14:59:51.978Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve -p 5001
+[debug] [2024-10-23T14:59:51.979Z] CLI Version:   13.22.1
+[debug] [2024-10-23T14:59:51.980Z] Platform:      win32
+[debug] [2024-10-23T14:59:51.980Z] Node Version:  v20.16.0
+[debug] [2024-10-23T14:59:51.980Z] Time:          Wed Oct 23 2024 17:59:51 GMT+0300 (East Africa Time)
+[debug] [2024-10-23T14:59:51.980Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-23T14:59:52.237Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-23T14:59:52.237Z] > authorizing via signed-in user (semiraalewii@gmail.com)
+[debug] [2024-10-23T14:59:52.237Z] [iam] checking project clone-2024-d9b68 for permissions ["firebase.projects.get"]
+[debug] [2024-10-23T14:59:52.239Z] Checked if tokens are valid: true, expires at: 1729698612983
+[debug] [2024-10-23T14:59:52.239Z] Checked if tokens are valid: true, expires at: 1729698612983
+[debug] [2024-10-23T14:59:52.242Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-2024-d9b68:testIamPermissions [none]
+[debug] [2024-10-23T14:59:52.242Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-2024-d9b68:testIamPermissions x-goog-quota-user=projects/clone-2024-d9b68
+[debug] [2024-10-23T14:59:52.242Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-2024-d9b68:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-10-23T14:59:54.155Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-2024-d9b68:testIamPermissions 200
+[debug] [2024-10-23T14:59:54.155Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-2024-d9b68:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-10-23T14:59:54.156Z] Checked if tokens are valid: true, expires at: 1729698612983
+[debug] [2024-10-23T14:59:54.156Z] Checked if tokens are valid: true, expires at: 1729698612983
+[debug] [2024-10-23T14:59:54.158Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-2024-d9b68 [none]
+[debug] [2024-10-23T14:59:55.002Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-2024-d9b68 200
+[debug] [2024-10-23T14:59:55.002Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-2024-d9b68 {"projectId":"clone-2024-d9b68","projectNumber":"61998021842","displayName":"amazon-clone-2024","name":"projects/clone-2024-d9b68","resources":{"hostingSite":"clone-2024-d9b68"},"state":"ACTIVE","etag":"1_0a25578c-12d6-4b46-a388-624c969e7bcb"}
+[info] 
+[info] === Serving from 'C:\Users\HP\Desktop\evangadi\Phase 4(2)\Amazon-clne-2024\amazon-clone'...
+[info] 
+[debug] [2024-10-23T14:59:55.019Z] defaultcredentials: writing to file C:\Users\HP\AppData\Roaming\firebase\semiraalewii_gmail_com_application_default_credentials.json
+[debug] [2024-10-23T14:59:55.024Z] Setting GAC to C:\Users\HP\AppData\Roaming\firebase\semiraalewii_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\HP\\AppData\\Roaming\\firebase\\semiraalewii_gmail_com_application_default_credentials.json"}}
+[debug] [2024-10-23T14:59:55.033Z] Checked if tokens are valid: true, expires at: 1729698612983
+[debug] [2024-10-23T14:59:55.033Z] Checked if tokens are valid: true, expires at: 1729698612983
+[debug] [2024-10-23T14:59:55.034Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-2024-d9b68/adminSdkConfig [none]
+[debug] [2024-10-23T14:59:55.684Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-2024-d9b68/adminSdkConfig 200
+[debug] [2024-10-23T14:59:55.684Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-2024-d9b68/adminSdkConfig {"projectId":"clone-2024-d9b68","storageBucket":"clone-2024-d9b68.appspot.com"}
+[info] i  functions: Watching "C:\Users\HP\Desktop\evangadi\Phase 4(2)\Amazon-clne-2024\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\HP\\Desktop\\evangadi\\Phase 4(2)\\Amazon-clne-2024\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2024-10-23T14:59:55.733Z] Validating nodejs source
+[debug] [2024-10-23T14:59:59.019Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.2.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-10-23T14:59:59.020Z] Building nodejs source
+[debug] [2024-10-23T14:59:59.020Z] Failed to find version of module node: reached end of search path C:\Users\HP\Desktop\evangadi\Phase 4(2)\Amazon-clne-2024\amazon-clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-10-23T14:59:59.030Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-10-23T14:59:59.071Z] Found firebase-functions binary at 'C:\Users\HP\Desktop\evangadi\Phase 4(2)\Amazon-clne-2024\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8989
+
+[error] Error: Neither apiKey nor config.authenticator provided
+    at Stripe._setAuthenticator (C:\Users\HP\Desktop\evangadi\Phase 4(2)\Amazon-clne-2024\amazon-clone\functions\node_modules\stripe\cjs\stripe.core.js:166:23)
+    at new Stripe (C:\Users\HP\Desktop\evangadi\Phase 4(2)\Amazon-clne-2024\amazon-clone\functions\node_modules\stripe\cjs\stripe.core.js:102:14)
+    at Stripe (C:\Users\HP\Desktop\evangadi\Phase 4(2)\Amazon-clne-2024\amazon-clone\functions\node_modules\stripe\cjs\stripe.core.js:58:20)
+    at Object.<anonymous> (C:\Users\HP\Desktop\evangadi\Phase 4(2)\Amazon-clne-2024\amazon-clone\functions\index.js:7:31)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+
+[debug] [2024-10-23T15:00:00.971Z] Got response code 400; body Failed to generate manifest from function source: Error: Neither apiKey nor config.authenticator provided
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}

@@ -1,5 +1,4 @@
 {
-  "homepage": "https://SemiraAlewi.github.io/Amazon-clne-2024",
   "name": "amazon-clone",
   "version": "0.1.0",
   "private": true,
@@ -7,13 +6,13 @@
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@mui/material": "^6.1.2",
-    "@stripe/react-stripe-js": "^2.8.0",
-    "@stripe/stripe-js": "^4.7.0",
+    "@stripe/react-stripe-js": "^2.8.1",
+    "@stripe/stripe-js": "^4.9.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.7",
-    "firebase": "^10.14.0",
+    "firebase": "^10.14.1",
     "numeral": "^2.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -26,9 +25,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -55,7 +51,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SemiraAlewi/Amazon-clone-2024.git"
+    "url": "https://github.com/SemiraAlewi/Amazon-clne-2024.git"
   },
   "engines": {
     "node": ">=14.0.0",
